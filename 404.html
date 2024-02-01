@@ -1,0 +1,147 @@
+---
+permalink: /404.html
+---
+<!doctype html>
+<html>
+<head>
+  <title>Société belge de débat</title>
+  <meta property="og:title" content="Société belge de débat" />
+  {% include head.html %}
+</head>
+<body>
+  <header class="header section-style background" id="header"><!--header-start-->
+    <div class="pattern height-resize" id="pattern">
+      <div class="container">
+        <figure class="logo animated fadeInDown delay-07s">
+          <a href="https://www.rugir.be"><img src="/img/logo/rugir-white-transparent.svg" alt=""></a>
+        </figure>
+        <h1 class="animated fadeInDown delay-07s">Rugir !</h1>
+        <ul class="we-create animated fadeInUp delay-1s">
+          <li>Société belge de débat</li>
+        </ul>
+      </div>
+    </div>
+  </header><!--header-end-->
+
+  <section class="main-section" id="service"><!--main-section-start-->
+    <div class="container">
+      <h2>Mince, la page que vous chercher semble ne pas exister.</h2>
+      <h6>CODE D'ERREUR: 404</h6>
+      <p>Nous n'avons pu trouver la page que vous cherchiez. Cela peut se produire pour plusieurs raisons :</p>
+      <ul>
+        <li>Il y a une erreur dans l'URL que vous avez fournie. Veuillez vérifier l'URL et réessayer ;</li>
+        <li>La page que vous chercher a soit été déplacée ou supprimée.</li>
+      </ul>
+      <p>Vous pouvez retourner à la page d'accueil en <a href="https://www.rugir.be">cliquant ici</a>.</p>
+    </div>
+  </section><!--main-section-end-->
+
+  {%include footer.html %}
+
+
+  <script type="text/javascript">
+  $(document).ready(function(e) {
+    $('#test').scrollToFixed();
+    $('.res-nav_click').click(function(){
+      $('.main-nav').slideToggle();
+      return false
+
+    });
+
+  });
+  </script>
+
+  <script>
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100
+    }
+  );
+  wow.init();
+
+  </script>
+
+
+  <script type="text/javascript">
+  $(window).load(function(){
+
+    $('.main-nav li a').bind('click',function(event){
+      var $anchor = $(this);
+
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 102
+      }, 1500,'easeInOutExpo');
+      /*
+      if you don't want to use the easing effects:
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1000);
+    */
+    event.preventDefault();
+  });
+})
+</script>
+
+<script type="text/javascript">
+
+$(window).load(function(){
+
+
+  var $container = $('.portfolioContainer'),
+  $body = $('body'),
+  colW = 375,
+  columns = null;
+
+
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+      .isotope('reLayout');
+    }
+
+  }).smartresize(); // trigger resize to set container width
+  $('.portfolioFilter a').click(function(){
+    $('.portfolioFilter .current').removeClass('current');
+    $(this).addClass('current');
+
+    var selector = $(this).attr('data-filter');
+    $container.isotope({
+
+      filter: selector,
+    });
+    return false;
+  });
+
+});
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85176146-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>

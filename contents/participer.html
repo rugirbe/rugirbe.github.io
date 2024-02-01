@@ -1,0 +1,276 @@
+---
+permalink: /participer/
+---
+<!doctype html>
+<html>
+<head>
+  <title>Société belge de Débat - Participer</title>
+  <meta property="og:title" content="Participer à la Société belge de Débat" />
+  {% include head.html %}
+</head>
+<body>
+  <div style="overflow:hidden;">
+
+    {% include header.html %}
+    {% include nav.html %}
+
+
+    <section class="main-section contact" id="participer">
+      <div class="container">
+        <h2>Rejoignez-nous !</h2>
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 wow fadeInLeft">
+            <p class="center">Pour poser votre candidature, envoyez-nous votre lettre de motivation avant le 20 septembre 2020 à l'adresse suivante : <a href="mailto:contact@rugir.be">contact@rugir.be</a>.</p>
+            <p class="center">Il n’y pas de profil type : beaucoup de motivation, une envie de débattre et de se confronter sur des sujets d’actualité, voilà tout !</p>
+            <p class="center">Pour toute information complémentaire, n’hésitez pas à prendre contact avec nous.</p>
+            </div>
+          <!-- <div class="col-lg-7 col-sm-12 wow fadeInUp delay-05s">
+            <div class="form">
+              <form method="post" action="inscription">
+                <input class="input-text" type="text" name="" value="Nom *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+                <input class="input-text" type="text" name="" value="E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+                <div class="text-area-box">
+                  <textarea class="input-text text-area no-margin-bottom" name="motivation" id="motivation" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" <?php if(!$inscr_open){ echo "disabled=\"disabled\""; } ?>> <?php if($inscr_open){ echo "Lettre de motivation *"; }else{ echo "Les inscriptions sont fermées" ; } ?> </textarea>
+                  <?php if($inscr_open){ ?><p class="compteur pull-right" id="compteur">0 / 300</p> <?php } ?>
+                </div>
+                <input class="input text honeypot" type="honeypot" name="honeypot" value="Ne pas remplir!">
+                <input class="input-btn pull-right" id="confirmer" type="submit" value="continuer" <?php if(!$inscr_open){ echo "disabled=\"disabled\""; } ?>>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="main-section" id="Ingeschrijvingen zijn gesloten">
+      <div class="container">
+        <h2>Participer</h2>
+        <p class="justify">Les inscriptions pour la simulation de 2019 sont terminées. <br/>Revenez pour les inscriptions de la simulation de 2020 à l'automne 2019.</p>
+      </div>
+    </section> -->
+
+    <!-- <section class="main-section alabaster" id="Procédure de selection">
+      <div class="container">
+        <h2>Procédure de sélection</h2>
+        <p class="justify">Le Jeugd Parlement Jeunesse tient la transparence en haute estime, c’est pourquoi nous rendons ici notre procédure de sélection publique.</p>
+        <p class="justify">Après la clôture des inscriptions, les lettres de motivation sont recueillies et anonymisées. Chaque lettre se voit ensuite attribuer une note par plusieurs membres de l’organisation. L’attribution de ces notes prend en compte en grande majorité votre motivation et votre démarche ; dans une moindre mesure la qualité de votre lettre et les fondements d’opinion. Les lettres avec les notes les plus élevés sont retenues, tout en veillant à garder un équilibre entre les groupes linguistiques.</p>
+        <p class="justify">Le Jeugd Parlement Jeunesse a pour ambition d’attirer des participants motivés qui reflètent une certaine diversité de domaine d’étude, professionnelle, géographique, sociale, d’origine ethnique, de genre… Nous essayons autant que possible de prendre en compte toutes les sensibilités de notre pays et recherchons une représentation proportionnelle de la grande diversité qui fait la richesse de notre pays.</p>
+      </div>
+    </section> -->
+
+  <!--  <section class="main-section" id="laws">
+      <div class="container">
+        <h2>Projets de loi</h2>
+        <h6>Cette année, les projets de loi sont les suivants.</h6>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 wow fadeInLeft delay-05s">
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="zmdi zmdi-shield-security"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Réforme des sanctions pénales</h3>
+                <p class="justify">Les peines de prisons sont contre productives et ne profitent en rien à la société de manière générale, à la victime et à l’auteur des faits en particulier. De plus elles ne sont pas en adéquation avec la société actuelle. Il s’agit donc de les remplacer par un nouveau système prônant une justice réparatrice du dommage et mettant l’accent sur l’intégration socio-économique de l’intéressé. Le projet s’articule donc autour de mesures intégratives d’une part, dissuasives d’autre part. On met à profit les différentes avancées technologiques.</p>
+                <p class="justify"><a href="https://www.jeugdparlementjeunesse.be/pdf/2019/strafrechtelijke_sancties.pdf" target = "_blank">Projet de loi concernant la réforme des sanctions pénales</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 wow fadeInLeft delay-05s">
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="zmdi zmdi-eyedropper"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Consommation de drogues</h3>
+                <p class="justify">Le but de ce projet de loi est de moderniser la Belgique en matière de droits individuels et de santé publique, en dépénalisant la consommation individuelle et la possession en-dessous d’une certaine quantité de toutes les drogues. De plus, légaliser de manière encadrée la consommation, la vente et la production de cannabis et autres drogues douces, à l’image de nos voisin·e·s néerlandais·e·s, pour favoriser un meilleur contrôle du trafic et de la qualité de ces drogues qui sont les plus consommées. </p>
+                <p class="justify"><a href="https://www.jeugdparlementjeunesse.be/pdf/2019/depenalisation_drogues" target = "_blank">Projet de loi concernant la consommation de drogues</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 wow fadeInLeft delay-05s">
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="zmdi zmdi-chart"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Fonds d'investissement pour les entreprises</h3>
+                <p class="justify">Tout le monde a un jour eu envie de lancer sa propre entreprise. Malheureusement, bon nombre de ces projets tombent à l’eau faute de moyens. Ce projet de loi corrige cette imperfection : désormais, toutes les personnes, physiques ou morales, peuvent participer au développement des PME. Comment ? En prêtant au Fonds d’investissement pour les entreprises. Concrètement, ce projet vise à mobiliser une partie de l’épargne belge (260 milliards d’euros) pour réinjecter de l’argent frais dans l’économie au bénéfice d’entreprises respectant une série de critères sociaux.</p>
+                <p class="justify"><a href="https://www.jeugdparlementjeunesse.be/pdf/2019/fonds_investissement.pdf" target = "_blank">Projet de loi concernant l'introduction d'un fonds d'investissement pour les entreprises</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 wow fadeInLeft delay-05s">
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="zmdi zmdi-balance"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Extension de la législation éthique</h3>
+                <p class="justify">Ce projet de loi vise à appliquer, étendre et protéger l’autodétermination dans tous ses aspects. Le point de départ de la réflexion est l’idée que chaque personne peut disposer de sa propre vie et de son propre corps. Il faut donc créer un cadre législatif autour du suicide, étendre l’euthanasie pour les plus âgés et simplifier la loi portant sur l’avortement. La liberté de choix sera ainsi assurée pour tous. </p>
+                <p class="justify"><a href="https://www.jeugdparlementjeunesse.be/pdf/2019/ethische_wetgeving.pdf" target = "_blank">Projet de loi concernant la législation éthique</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="main-section alabaster">
+      <div class="container">
+        <h2>Cotisation</h2>
+        <p class="justify"><b>Prix</b> -  La participation annuelle coûte € 50, permettant le fonctionnement quotidien de Rugir, dont une participation aux frais engendrés par les amuse-bouche fournis à chaque réunion. Ce montant devra être versé sur le compte BE38 3774 6651 5372 avec, en communication, votre nom, prénom et « Rugir 2020 ».</p>
+        <p class="justify"><b>Tarif social</b> -  L'aspect financier n’est pas une condition pour participer. Si vous êtes dans une situation financière moins favorisée, vous pouvez profiter d’un tarif social. Prenez contact avec nous pour plus d’information, en envoyant un e-mail à l’adresse suivante : <a href="mailto:contact@rugir.be">contact@rugir.be</a>.</p>
+        <!-- <p class="justify"><b>Remboursement</b> - Les participants ont jusqu’au 31 janvier pour payer leur participation aux frais. Si un participant se désiste avant le 15 février, il est remboursé à 100%. S’il se désiste entre le 16 février et le 23 février, il est remboursé à 50%. S’il se désiste après le 23 février il n’est pas remboursé.</p> -->
+      </div>
+    </section>
+
+
+    <section class="background-participer-1 no-padding"><!--business-talking-start-->
+      <div class="pattern height-resize">
+      </div>
+    </section><!--business-talking-end-->
+
+
+    <!-- <section class="main-section alabaster" id="soutenir">
+      <div class="container">
+        <h2>Soutenir Rugir</h2>
+        <p class="justify">Alors que cette neuvième édition s’est terminée il y a quelques mois, où nous avons débattu d’une démocratie différente, de laïcité et de religion, de la flexibilisation du droit du travail ou de sujets d'éthique, nous mettons déjà tout en œuvre afin d’organiser au mieux la simulation prochaine. Hélas, afin de rester efficace, l’argent reste un vecteur indispensable - pour lequel nous sollicitons votre soutien.
+        </p>
+        <p class="justify">Nous sommes convaincus que vous avez beaucoup à gagner en supportant notre projet. À travers nous, vous pouvez encore mieux affirmer vos valeurs telles que l’engagement citoyen, la démocratie, la liberté d'expression, l’échange de culture et d’idées, le respect mutuel et l’exigence. De plus notre projet jouit d’une visibilité assez large grâce à une campagne intensive de recrutement dans toutes les universités du pays et par une médiatisation chaque année plus importante. Vous trouverez ci-dessous notre dossier de sponsoring, contenant toutes les informations nécessaires quant à notre projet ainsi que son résumé. Nous vous invitons également à jeter un coup d’œil à notre dossier presse.</p>
+        <p class="justify">Pour toute question ou renseignement supplémentaire, n’hésitez surtout pas à nous contacter ; nous nous ferons un plaisir de vous répondre dans les plus brefs délais.</p>
+        <ul class="list-inline buttons-center">
+          <li><a class="red-button animated fadeInRight delay-1s" href="../misc/Persdossier_DossierPresse_18.pdf" target="_blank">Presse</a></li>
+          <li><a class="red-button animated fadeInRight delay-1s" href="../misc/SponsoringFR_18.pdf" target="_blank">Sponsoring</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="background-participer-2 no-padding">
+      <div class="pattern height-resize">
+        <h1 class="background-title">Merci !</h1>
+      </div>
+    </section>-->
+
+    {% include footer.html %}
+
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+      $('#test').scrollToFixed();
+      $('.res-nav_click').click(function(){
+        $('.main-nav').slideToggle();
+        return false
+
+      });
+
+    });
+    </script>
+
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+
+    </script>
+
+
+    <script type="text/javascript">
+    $(window).load(function(){
+
+      $('.main-nav li a').bind('click',function(event){
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 102
+        }, 1500,'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+      }, 1000);
+      */
+      event.preventDefault();
+    });
+  })
+  </script>
+
+  <script type="text/javascript">
+
+  $(window).load(function(){
+
+
+    var $container = $('.portfolioContainer'),
+    $body = $('body'),
+    colW = 375,
+    columns = null;
+
+
+    $container.isotope({
+      // disable window resizing
+      resizable: true,
+      masonry: {
+        columnWidth: colW
+      }
+    });
+
+    $(window).smartresize(function(){
+      // check if columns has changed
+      var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+      if ( currentColumns !== columns ) {
+        // set new column count
+        columns = currentColumns;
+        // apply width to container manually, then trigger relayout
+        $container.width( columns * colW )
+        .isotope('reLayout');
+      }
+
+    }).smartresize(); // trigger resize to set container width
+    $('.portfolioFilter a').click(function(){
+      $('.portfolioFilter .current').removeClass('current');
+      $(this).addClass('current');
+
+      var selector = $(this).attr('data-filter');
+      $container.isotope({
+
+        filter: selector,
+      });
+      return false;
+    });
+
+  });
+
+  </script>
+
+  <?php if($inscr_open){ ?>
+    <script>
+    $(document).ready(function(e) {
+
+      $('#motivation').keyup(function() {
+
+        var nombreMots = jQuery.trim($(this).val()).split(' ').length;
+
+        var msg =  nombreMots + '  / 300';
+        $('#compteur').text(msg);
+        if (nombreMots > 300) {
+          $('#compteur').addClass("bad");
+          document.getElementById('confirmer').disabled = true;
+        }
+        else {
+          $('#compteur').removeClass("bad");
+          document.getElementById('confirmer').disabled = false;
+        }
+
+      })
+
+    });
+    </script>
+  <?php } ?>
+
+
+</body>
+</html>
+`

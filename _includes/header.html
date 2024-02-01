@@ -1,0 +1,53 @@
+<!-- <div id="banner" class="banner">
+  <div class"container">
+    <a href="/fr/participer/"><b>Rugir recrute ! N'hésitez pas à déposer votre candidature avant le 20 septembre.</b></a>
+    <span class="close">X</span>
+  </div>
+</div> -->
+
+<div style="overflow:hidden;">
+  <header id="header"><!--header-start-->
+    <div class="header section-style background">
+      <div class="pattern height-resize">
+        <div class="container">
+          <figure class="logo animated fadeInDown delay-07s">
+            <p><a href="/"><img src="/img/logo/rugir-white-transparent.svg" alt="Sceau"></a></p>
+          </figure>
+          <h1 class="animated fadeInDown delay-07s">Rugir</h1>
+          <ul class="we-create animated fadeInUp delay-1s">
+            <li>Société belge de Débat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header><!--header-end-->
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(
+  function(){
+    if ($.cookie('closed')){
+      $('.banner').remove();
+    }
+    $('.close').click(
+      function(){
+        $(this)
+        .closest('.banner')
+        .animate(
+          {
+            opacity:0,
+            height: "toggle"
+          }, 1500,
+          function(){
+            $(this).remove();
+          }
+        );
+        $.cookie('closed',true, {expires: 30});
+      });
+      /* $('#clear').click(
+      function(){
+      $.cookie('closed',false, {expires: -200});
+    }); */
+  });
+</script>

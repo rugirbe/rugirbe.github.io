@@ -1,0 +1,6 @@
+Sitemap: https://www.rugir.be/sitemap.xml
+
+User-Agent: *
+Disallow: /head
+Disallow: /footer
+Disallow: /header
