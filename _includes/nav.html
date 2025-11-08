@@ -1,42 +1,51 @@
-<nav class="main-nav-outer" id="test"><!--main-nav-start-->
-  <div class="container">
-    <ul class="main-nav">
-      <li><a href="/">Accueil</a></li> <!-- pitch + blog -->
-      <li><a href="/debat/">Le débat</a></li> <!-- qu'est-ce que le débat -->
-      <li><a href="/participer/">Participer</a></li> <!-- participer -->
-      <li class="small-logo"><a href="#header"><img src="/img/logo/rugir-nt-color-full.svg" alt="" width="50px"></a></li>
-      <li><a href="/concours/">Championnats</a></li> <!-- concours -->
-      <li><a href="/a-propos/">A propos</a></li> <!-- historique + bureau -->
-      <li><a href="/contact/">Contact</a></li> <!-- contact -->
-    </ul>
-    <a class="res-nav_click" href="#"><i class="zmdi zmdi-menu"></i></a>
-  </div>
-</nav><!--main-nav-end-->
-
+<nav class="main-nav-outer" id="test">
+    <!--main-nav-start-->
+    <div class="container">
+        <ul class="main-nav">
+            <li><a href="/">Accueil</a></li>
+            <!-- pitch + blog -->
+            <li><a href="/participer/">Participer</a></li>
+            <!-- participer -->
+            <li class="small-logo">
+                <a href="#header"
+                    ><img
+                        src="/img/logo/rugir-nt-color-full.svg"
+                        alt=""
+                        width="50px"
+                /></a>
+            </li>
+            <li><a href="/a-propos/">A propos</a></li>
+            <!-- historique + bureau -->
+            <li><a href="/contact/">Contact</a></li>
+            <!-- contact -->
+        </ul>
+        <a class="res-nav_click" href="#"><i class="zmdi zmdi-menu"></i></a>
+    </div>
+</nav>
+<!--main-nav-end-->
 
 <script type="text/javascript">
-$(document).ready(
-  function(){
-    if ($.cookie('closed')){
-      $('.banner').remove();
-    }
-    $('.close').click(
-      function(){
-        $(this)
-        .closest('.banner')
-        .animate(
-          {
-            'top':'120%'
-          }, 1500,
-          function(){
-            $(this).remove();
-          }
-        );
-        $.cookie('closed',true, {expires: 30});
-      });
-      /* $('#clear').click(
+    $(document).ready(function () {
+        if ($.cookie("closed")) {
+            $(".banner").remove();
+        }
+        $(".close").click(function () {
+            $(this)
+                .closest(".banner")
+                .animate(
+                    {
+                        top: "120%",
+                    },
+                    1500,
+                    function () {
+                        $(this).remove();
+                    },
+                );
+            $.cookie("closed", true, { expires: 30 });
+        });
+        /* $('#clear').click(
       function(){
       $.cookie('closed',false, {expires: -200});
     }); */
-  });
+    });
 </script>
