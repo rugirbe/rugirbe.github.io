@@ -13,17 +13,6 @@ permalink: /a-propos/
     {% include header.html %}
     {% include nav.html %}
 
-    <section class="main-section" id="service"><!--main-section-start-->
-      <div class="container">
-        <h2>Comment Rugir est-elle née ?</h2>
-        <h6>Beyrouth - Paris - Bruxelles</h6>
-        <p class="justify">Rugir, c’est une bande d’amis et d’anciens de la Conférence Olivaint de Belgique qui a pris goût au débat parlementaire en se confrontant à des étudiants francophones des quatre coins du monde lors du championnat international de débat francophone de Beyrouth.</p>
-        <p class="justify">Après cette expérience, c’était devenu une évidence pour nous : il fallait lancer une association spécialement dédiée au débat parlementaire pour partager notre passion !</p>
-      </div>
-    </section>
-
-    {% include participer_banniere.html %}
-
 <section class="main-section team alabaster" id="team">
   <div class="container">
     <h2>Bureau</h2>
@@ -156,10 +145,27 @@ permalink: /a-propos/
   <div class="container">
     <h2>Nous voir débattre</h2>
     <h6>Un extrait de chocs FFDE</h6>
-    <iframe src="https://www.youtube.com/embed/6IFpcHshAJw?si=favUgMWrYIONeRap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/n53ZaTOH2HI?si=F_3qcyqjyz-Idg56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/6IFpcHshAJw?si=favUgMWrYIONeRap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/n53ZaTOH2HI?si=F_3qcyqjyz-Idg56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
+
+{% include participer_banniere.html %}
+
+<section class="main-section" id="service"><!--main-section-start-->
+  <div class="container">
+    <h2>Historique</h2>
+    <h6>Comment Rugir est-elle née ?</h6>
+    <p class="justify">Rugir, c’est une bande d’amis et d’anciens de la Conférence Olivaint de Belgique qui a pris goût au débat parlementaire en se confrontant à des étudiants francophones des quatre coins du monde lors du championnat international de débat francophone de Beyrouth.</p>
+    <p class="justify">Après cette expérience, c’était devenu une évidence pour nous : il fallait lancer une association spécialement dédiée au débat parlementaire pour partager notre passion !</p>
+  </div>
+</section>
+
+{% include contact.html %}
 
 {% include footer.html %}
 

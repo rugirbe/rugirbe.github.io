@@ -1354,3 +1354,14 @@ img {
         right: auto;
     }
 }
+
+.video-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto; /* optional: center the video */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px; /* adjust height as needed */
+}
